@@ -6,7 +6,7 @@
 /*   By: mbeaujar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/11 15:33:20 by mbeaujar          #+#    #+#             */
-/*   Updated: 2020/08/11 21:27:32 by mbeaujar         ###   ########.fr       */
+/*   Updated: 2020/08/17 23:13:20 by mbeaujar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,15 @@
 # define GET_NEXT_LINE_H
 
 # include <stdlib.h>
+# include <stdio.h>
 # include <unistd.h>
 # include <fcntl.h>
 # define MAX_FD 2147483647
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1
+
+# endif
 
 char		*ret_line(char *save);
 char		*next_line_buff(char *save);

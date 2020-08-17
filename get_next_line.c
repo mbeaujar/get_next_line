@@ -6,7 +6,7 @@
 /*   By: mbeaujar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/11 15:32:57 by mbeaujar          #+#    #+#             */
-/*   Updated: 2020/08/11 21:35:22 by mbeaujar         ###   ########.fr       */
+/*   Updated: 2020/08/12 20:00:30 by mbeaujar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,5 @@ int			get_next_line(int fd, char **line)
 	free(buff);
 	*line = ret_line(save[fd]);
 	save[fd] = next_line_buff(save[fd]);
-	if (ret == 0)
-		return (0);
-	return (1);
+	return (ret == 0 ? 0 : 1);
 }
