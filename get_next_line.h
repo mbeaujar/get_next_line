@@ -6,7 +6,7 @@
 /*   By: mbeaujar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/11 15:33:20 by mbeaujar          #+#    #+#             */
-/*   Updated: 2020/08/17 23:13:20 by mbeaujar         ###   ########.fr       */
+/*   Updated: 2020/11/21 23:11:32 by beaujardm        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # define MAX_FD 2147483647
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1
+#  define BUFFER_SIZE 100
 
 # endif
 

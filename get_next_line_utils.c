@@ -6,7 +6,7 @@
 /*   By: mbeaujar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/11 15:33:11 by mbeaujar          #+#    #+#             */
-/*   Updated: 2020/08/11 21:28:11 by mbeaujar         ###   ########.fr       */
+/*   Updated: 2020/11/08 12:58:48 by beaujardm        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,5 +80,6 @@ char		*ft_strjoin(char *s1, char *s2)
 	ft_memmove(tab, s1, ft_strlen(s1));
 	ft_memmove(tab + ft_strlen(s1), s2, ft_strlen(s2));
 	tab[(ft_strlen(s1) + ft_strlen(s2))] = '\0';
+	free(s1);
 	return (tab);
 }
