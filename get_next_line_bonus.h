@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
-# define MAX_FD 2147483647
+# define MAX_FD 1024
 
 char		*ret_line(char *save);
 char		*next_line_buff(char *save);
